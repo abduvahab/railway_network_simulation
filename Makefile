@@ -1,7 +1,8 @@
 NAME = railway
 GCC = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98
-SRCS = main.cpp
+PREFIX = ./src
+SRCS = main.cpp $(PREFIX)/node.cpp
 OBJS = ${SRCS:.cpp=.o}
 .cpp.o:
 	$(GCC) $(FLAGS) $< -c -o $@

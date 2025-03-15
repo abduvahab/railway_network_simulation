@@ -2,6 +2,8 @@
 #include <iostream>
 #include "./src/node.hpp"
 #include "./src/rail.hpp"
+#include "./src/railNetWork.hpp"
+#include "./src/loadFile.hpp"
 
 int main(){
 
@@ -20,5 +22,9 @@ int main(){
     Rail ms = Rail(&node, &strasbourg, 100.0, 120.0);
     std::cout<<ms.getStartNode()->getName()<<std::endl;
     std::cout<<ms.getEndNode()->getName()<<std::endl;
+    RailNetWork netWork;
+    netWork.ok();
+    LoadFile file;
+    file.ok();
     return 0;
 }

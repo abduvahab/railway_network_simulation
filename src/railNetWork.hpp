@@ -18,10 +18,14 @@ class RailNetWork{
         RailNetWork(const RailNetWork& railNetwork);
         RailNetWork& operator=(const RailNetWork& railNetWork);
 
-        
+
+        void ok(){
+            std::cout<<"network ok"<<std::endl;
+        }
 
     
 };
+
 
 
 #endif
